@@ -1,11 +1,11 @@
-var express = require('express');
-var router = express.Router();
-var mock = require('../mock');
+const express = require('express');
+const router = express.Router();
+const mock = require('../mock');
 
 
 router.get('/', function(req, res, next) {
-mock.getData();
-  res.json({success: true});
+  const data = mock.getData();
+  res.json({success: true, data});
 });
 
 module.exports = router;

@@ -1,11 +1,26 @@
+'use strict';
+
+const moment = require('moment');
+const months = moment.months();
+const SEASONS = ['Winter', 'Spring', 'Summer', 'Autumn'];
+
+function getSeason(index) {
+  return SEASONS[Math.floor((index / 12 * 4) % 4)];
+}
+
+const data = months.map(function(month, index) {
+  return {
+    name: month.toLocaleLowerCase(),
+    image: 'illustrations/' + month.toLocaleLowerCase() + '.jpg',
+    date: moment([2017, index]).format("YYYY-MM-DD"),
+    description: 'Description',
+    days_count: moment([2017, index]).daysInMonth(),
+    season: getSeason(index + 1)
+  }
+});
+
 module.exports = {
-  getRArray: function() {
-    var arrays = [];
-    arrays[0] = 'array 0';
-    arrays[1] = 'array 1';
-    arrays[2] = 'array 2';
-    arrays[3] = 'array 3';
-    arrays[4] = 'array 4';
-    return arrays[Math.floor(Math.random()*arrays.lenght)];
+  getData: function() {
+    return data;
   }
 };
