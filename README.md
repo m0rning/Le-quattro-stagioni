@@ -2,6 +2,13 @@
 
 create angular app ( use latest Angular version ) using following layout https://wireframe.cc/M438ld
 
+How to run the server locally:
+
+- clone or download the repo
+- in terminal window run cd Le-quattro-stagioni/
+- run npm install
+- node bin/www
+
 TODO: 
 
 1) get data from the API and display it on the main page
