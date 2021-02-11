@@ -49,12 +49,12 @@ TODO:
             
             
             
-      Example B:
+   Example B:
       
-          1) I have filtered the data by "Winter"
+      1) I have filtered the data by "Winter"
           
-              I should see only 3 cards
+            I should see only 3 cards
 
-          2) Now I can sort by name
+      2) Now I can sort by name
 
-              I should see only 3 cards, December is first, February is second and January is the last one
+            I should see only 3 cards, December is first, February is second and January is the last one
