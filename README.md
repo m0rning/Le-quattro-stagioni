@@ -1,6 +1,6 @@
 # Le-quattro-stagioni
 
-create angular app ( use latest Angular version ) using following layout https://wireframe.cc/M438ld
+create an angular app ( use the latest Angular version ) using the following layout https://wireframe.cc/M438ld
 
 ## How to run the server locally:
 
@@ -13,7 +13,7 @@ create angular app ( use latest Angular version ) using following layout https:/
 
 1) get data from the API and display it on the main page
 2) implement a radio button for different views (grid view and list view)
-3) implement searching by: name, season, description
+3) implement the search by: name, season, description
 4) implement grouping by: season, days_count ( dropdown list with the following options: 'Season', 'Days count' )
 5) implement filtering by: season ( dropdown list with the following options: 'Winter', 'Spring', 'Summer', 'Autumn' )
 6) implement sorting by: date, name, season, days_count ( dropdown list with the following options: 'Date', 'Name', 'Season', 'Days count' )
